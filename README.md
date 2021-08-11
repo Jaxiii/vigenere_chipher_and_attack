@@ -82,7 +82,7 @@ dart main.dart
 
  ![Bruno S. R. B](https://i.imgur.com/88vcXCx.png)(https://github.com/Jaxiii) Bruno S. R. de Barros - 18/0046063
 #
-![Davi Torres](https://avatars.githubusercontent.com/u/31858576?v=4)(https://github.com/torresdavi) Davi Torres - 15/0122896
+![Davi Torres](https://i.imgur.com/88vcXCx.png)(https://github.com/torresdavi) Davi Torres - 15/0122896
 #
 
 

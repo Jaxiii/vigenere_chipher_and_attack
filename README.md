@@ -12,24 +12,21 @@
 
 ## Features
 
-- Conecta ao servidor WebSocket da Binance Exchange
-- Recebe ticks por segundo de Candles de BitCoin (BTC) e Ethereum (ETH)
+- Vigenere Cipher & Decipher
+- Plain Text Frequency Attack [TODO]
 
-## Tech
+## Tech & Libs
 
 Este projeto utiliza as seguinte tecnologias e bibliotecas:
 
 - [Dart SDK](/https://dart.dev)
 
-## Compilação e Execução
+## Instalação, Compilação e Execução
 
 Esse programa requer [Dart SDK](/https://dart.dev) (>2.13.4) para rodar.
 
-#### Dart SDK Linux
-para compilar e executar
-
-usando apt-get
-faca o seguinte:
+### Dart SDK Linux
+no terminal usando apt-get faca o seguinte:
 
 ```sh
  sudo apt-get update
@@ -56,27 +53,29 @@ echo 'export PATH="$PATH:/usr/lib/dart/bin"' >> ~/.profile
 ```
 
 
-#### Dart SDK MacOS
-usando Homebrew:
+### Dart SDK MacOS
+no terminal usando Homebrew:
 
 ```sh
  brew tap dart-lang/dart
  brew install dart
 ```
 
-#### Dart SDK Windows
-para compilar e executar
+### Dart SDK Windows
+no Windows CMD:
 
-```sh
-~ go run main.go
+```cmd
+choco install dart-sdk
+choco upgrade dart-sdk
 ```
 
 #### Executando o programa
 para compilar e executar
 
-```cmd
-choco install dart-sdk
-choco upgrade dart-sdk
+```sh
+cd vigenere_dart
+cd lib
+dart main.dart
 ```
 
 ## Development

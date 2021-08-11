@@ -39,6 +39,8 @@ e entao instale o SDK assim:
 
 ```sh
  sudo apt-get update
+ ```
+ ```
  sudo apt-get install dart
 ```
 
@@ -58,6 +60,8 @@ no terminal usando Homebrew:
 
 ```sh
  brew tap dart-lang/dart
+ ```
+ ```
  brew install dart
 ```
 
@@ -66,15 +70,21 @@ no Windows CMD:
 
 ```cmd
 choco install dart-sdk
+```
+```
 choco upgrade dart-sdk
 ```
 
-#### Executando o programa
+## Executando o programa
 para compilar e executar
 
 ```sh
 cd vigenere_dart
+```
+```
 cd lib
+```
+```
 dart main.dart
 ```
 

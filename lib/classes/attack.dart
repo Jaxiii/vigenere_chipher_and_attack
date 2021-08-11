@@ -7,11 +7,11 @@
 ///   Davi Torres                                                   </br>
 //____________________________________________________________________
 ///
-///             Vigenere Cipher / DecipherFrequency Attack
+///             Vigenere Cipher / Decipher Frequency Attack
 ///___________________________________________________________________
 ///   ### FrequencyAttack Class
 ///
-///   
+///
 ///
 ///
 ///
@@ -21,7 +21,6 @@
 // not now
 //import 'cipher.dart';
 class FrequencyAttack {
-  
   Map<String, List<double>> _frequency = {
     "A": [14.63, 8.167],
     "B": [1.04, 1.492],
@@ -52,7 +51,6 @@ class FrequencyAttack {
   };
 
   Map<String, dynamic> frequencyStats(String inputString) {
-    int counter = 0;
     String _normalizedInputString = inputString
         .replaceAll(" ", "")
         .toUpperCase(); //normalizing input string
@@ -91,12 +89,10 @@ class FrequencyAttack {
 
     void _incrementFrequencyMap(String key) {
       _frequency[key].add(key);
-      //_frequency[key] = List.from(value).length;
     }
 
     _normalizedInputList.forEach((element) {
       if (_frequency.containsKey(element)) {
-        counter++;
         try {
           _incrementFrequencyMap(element);
         } catch (error) {
@@ -109,13 +105,22 @@ class FrequencyAttack {
 
     try {
       _frequency.forEach((key, value) {
-        value = List.from(value).length;
+        _frequency[key] = value.length;
       });
     } catch (error) {
       print(error);
       //TODO
     }
 
+    List<String> _sectionList = [];
+    for (int i = 0; i < _normalizedInputString.length; i++) {
+      i + 3 < _normalizedInputString.length
+          ? _sectionList.add(_normalizedInputString.substring(i, i + 3))
+          : null;
+      i += 3;
+    }
+
+    print(_sectionList);
     return _frequency;
   }
 }

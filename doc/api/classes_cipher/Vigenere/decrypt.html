@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the decrypt method from the Vigenere class, for the Dart programming language.">
+  <title>decrypt method - Vigenere class - cipher library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../../static-assets/github.css">
+  <link rel="stylesheet" href="../../static-assets/styles.css">
+  <link rel="icon" href="../../static-assets/favicon.png">
+
+  
+</head>
+
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">vigenere_dart</a></li>
+    <li><a href="../../classes_cipher/classes_cipher-library.html">cipher</a></li>
+    <li><a href="../../classes_cipher/Vigenere-class.html">Vigenere</a></li>
+    <li class="self-crumb">decrypt method</li>
+  </ol>
+  <div class="self-name">decrypt</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">vigenere_dart</a></li>
+  <li><a href="../../classes_cipher/classes_cipher-library.html">cipher</a></li>
+  <li><a href="../../classes_cipher/Vigenere-class.html">Vigenere</a></li>
+  <li class="self-crumb">decrypt method</li>
+</ol>
+
+
+    <h5>Vigenere class</h5>
+    <ol>
+
+    <li class="section-title"><a href="../../classes_cipher/Vigenere-class.html#constructors">Constructors</a></li>
+    <li><a href="../../classes_cipher/Vigenere/Vigenere.html">Vigenere</a></li>
+    <li><a href="../../classes_cipher/Vigenere/Vigenere.withTable.html">withTable</a></li>
+
+
+    <li class="section-title">
+      <a href="../../classes_cipher/Vigenere-class.html#instance-properties">Properties</a>
+    </li>
+    <li><a href="../../classes_cipher/Vigenere/alphabet.html">alphabet</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.13.4/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.13.4/dart-core/Object/runtimeType.html">runtimeType</a></li>
+    <li><a href="../../classes_cipher/Vigenere/vigenereTable.html">vigenereTable</a></li>
+
+    <li class="section-title"><a href="../../classes_cipher/Vigenere-class.html#instance-methods">Methods</a></li>
+    <li><a href="../../classes_cipher/Vigenere/decrypt.html">decrypt</a></li>
+    <li><a href="../../classes_cipher/Vigenere/encrypt.html">encrypt</a></li>
+    <li><a href="../../classes_cipher/Vigenere/getAlphabet.html">getAlphabet</a></li>
+    <li><a href="../../classes_cipher/Vigenere/getTable.html">getTable</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.13.4/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.13.4/dart-core/Object/toString.html">toString</a></li>
+
+    <li class="section-title inherited"><a href="../../classes_cipher/Vigenere-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.13.4/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">decrypt</span> method 
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://api.dart.dev/stable/2.13.4/dart-core/String-class.html">String</a></span>
+<span class="name ">decrypt</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="decrypt-param-_inputString"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.13.4/dart-core/String-class.html">String</a></span> <span class="parameter-name">_inputString</span>, </span></li>
+<li><span class="parameter" id="decrypt-param-_key"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.13.4/dart-core/String-class.html">String</a></span> <span class="parameter-name">_key</span></span></li>
+</ol>)
+
+      
+
+    </section>
+    
+<section class="desc markdown">
+  <p>given and encrypted string and a key return decrypted string | "public"</p>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">String decrypt(String _inputString, String _key) {
+  &#47;&#47;&#47; init  | null-safety | &quot;private&quot;
+  String _decryptedString = &quot;&quot;;
+
+  &#47;&#47;&#47;normalized input string | null-safety | &quot;private&quot;
+  String _normalizedInputString = _inputString
+      .replaceAll(&quot; &quot;, &quot;&quot;)
+      .toUpperCase(); &#47;&#47;normalizing input string
+
+  &#47;&#47;&#47;init list of &quot;chars from normalized string&quot; | null-safety | &quot;private&quot;
+  List&lt;String&gt; _normalizedInputList = _normalizedInputString.split(&quot;&quot;);
+
+  &#47;&#47;&#47; modulus of the input string - key so we can compute the keystream | null-safety | &quot;private&quot;
+  int _inputKeyModulus = _normalizedInputString.length % _key.length;
+
+  &#47;&#47;&#47; ratio of the input string - key so we can compute the keystream | null-safety | &quot;private&quot;
+  int _inputKeyRatio = (_normalizedInputString.length ~&#47; _key.length).toInt();
+
+  &#47;&#47;&#47;keystream string sums normalized
+  String _keystream =
+      (_key * _inputKeyRatio + (_key.substring(0, _inputKeyModulus)))
+          .toUpperCase();
+
+  &#47;&#47;&#47; decryption cycle iterating through table to find alphabetic index &amp; table index
+  for (int i = 0; i &lt; _normalizedInputList.length; i++) {
+    int _alphaIndex = this.alphabet.indexOf(_keystream[
+        i]); &#47;&#47; init to alphabetic index of keystream char (y-axis or j)
+    int _tableIndex = this.vigenereTable[_alphaIndex].indexOf(
+        _normalizedInputList[
+            i]); &#47;&#47; init to table index (x-axis or i) from alphabetic index (y-axis or j) and input char
+
+    &#47;&#47;&#47; mount the encrypted message with the sum of &quot;chars&quot;
+    _decryptedString = _decryptedString + this.alphabet[_tableIndex];
+  }
+
+  return _decryptedString;
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    vigenere_dart
+      0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+
+<script src="../../static-assets/highlight.pack.js"></script>
+<script src="../../static-assets/script.js"></script>
+
+
+
+</body>
+
+</html>
+

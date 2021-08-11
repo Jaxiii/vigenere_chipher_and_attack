@@ -1,0 +1,14 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "vigenere_dart",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "2.10"
+    }
+  ],
+  "generated": "2021-08-11T19:59:57.418812Z",
+  "generator": "pub",
+  "generatorVersion": "2.13.4"
+}

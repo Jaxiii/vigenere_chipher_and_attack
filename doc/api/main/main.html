@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the main function from the main library, for the Dart programming language.">
+  <title>main function - main library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../static-assets/github.css">
+  <link rel="stylesheet" href="../static-assets/styles.css">
+  <link rel="icon" href="../static-assets/favicon.png">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">vigenere_dart</a></li>
+    <li><a href="../main/main-library.html">main</a></li>
+    <li class="self-crumb">main function</li>
+  </ol>
+  <div class="self-name">main</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">vigenere_dart</a></li>
+  <li><a href="../main/main-library.html">main</a></li>
+  <li class="self-crumb">main function</li>
+</ol>
+
+
+    <h5>main library</h5>
+    <ol>
+
+
+
+
+
+  <li class="section-title"><a href="../main/main-library.html#functions">Functions</a></li>
+  <li><a href="../main/main.html">main</a></li>
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-function">main</span> function 
+ 
+</h1></div>
+
+    <section class="multi-line-signature">
+        
+
+<span class="returntype">dynamic</span>
+<span class="name ">main</span>(<wbr>)
+
+    </section>
+    
+<section class="desc markdown">
+  <p>Brasilia 09, de Agosto de 2021                                <br>
+Universidade de Brasilia                                      <br>
+CIC201 2021-01 | Seguranca Computacional | Turma A            <br>
+Prof. Dr. Joao Jose Costa Gondim                              <br>
+Bruno S. R. Barros                                            <br>
+Davi Torres                                                   <br></p>
+<p>Main-
+|- Vigenere Cipher / Decipher 
+|- Frequency Attack</p>
+<hr>
+<h3 id="vigenere-class">Vigenere Class</h3>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">&#47;&#47;____________________________________________________________________
+&#47;&#47;&#47;
+&#47;&#47;&#47;   Main-
+&#47;&#47;&#47;      |- Vigenere Cipher &#47; Decipher
+&#47;&#47;&#47;      |- Frequency Attack
+&#47;&#47;&#47;___________________________________________________________________
+&#47;&#47;&#47;   ### Vigenere Class
+&#47;&#47;&#47;
+&#47;&#47;&#47;
+&#47;&#47;&#47;
+&#47;&#47;&#47;
+&#47;&#47;&#47;
+&#47;&#47;&#47;
+&#47;&#47;&#47;
+&#47;&#47;&#47;
+main() {
+
+  &#47;&#47;&#47; #### Vigenere Cipher &#47; Decipher Block
+  Vigenere coder = Vigenere([&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;,&quot;R&quot;,&quot;S&quot;,&quot;T&quot;,&quot;U&quot;,&quot;V&quot;,&quot;W&quot;,&quot;X&quot;,&quot;Y&quot;,&quot;Z&quot;]);
+
+  print(coder.encrypt(&quot;Even the smallest person can change the course of the future&quot;, &quot;Frodo&quot;));
+  print(coder.decrypt(&quot;JMSQHMVGPOQCSVHUVFVCSTOQQMRBJSYYSFCZIGHCKKVHTZKIUS&quot;, &quot;Frodo&quot;));
+
+
+  &#47;&#47;&#47; #### Frequency Attack Block
+  &#47;&#47;&#47;
+  &#47;&#47;&#47;
+  FrequencyAttack attack = FrequencyAttack();
+  print(attack.frequencyStats(&quot;siuadAAhsdiua&quot;));
+
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    vigenere_dart
+      0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+
+<script src="../static-assets/highlight.pack.js"></script>
+<script src="../static-assets/script.js"></script>
+
+
+
+</body>
+
+</html>
+
